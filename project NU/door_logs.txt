@@ -1,0 +1,10 @@
+[2025-12-15 19:55:43.136827] User: Joy Akram Stage: OCR Result: Fail
+[2025-12-15 20:02:18.990436] User: Joy Akram Stage: OCR Result: Fail
+[2025-12-15 20:02:31.579583] User: Joy Akram Stage: OCR Result: Success
+[2025-12-15 21:01:02.430838] User: Joy Stage: OCR Result: Success ID: 2123026
+[2025-12-15 21:06:47.207469] User: Joy Stage: OCR Result: Fail ID: 2123026
+[2025-12-15 21:11:12.215623] User: Mostafa Stage: OCR Result: Fail ID: FCI2023102
+[2025-12-15 21:15:46.907284] User: Mostafa Stage: OCR Result: Success ID: FCI/2023/102
+[2025-12-15 21:16:09.229435] User: Joy Stage: OCR Result: Success ID: 2123026
+[2025-12-15 21:17:40.885633] User: Joy Stage: OCR Result: Fail ID: 2123026
+[2025-12-15 21:26:23.891516] User: Mostafa Stage: OCR Result: Fail ID: FCI/2023/102
