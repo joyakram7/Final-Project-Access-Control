@@ -1,0 +1,43 @@
+import os
+import speech_recognition as sr 
+
+
+passphrase = "open now"
+
+def voice_recognition():
+    print("=====Stage 2 : Passphrase")
+    reco = sr.Recognizer() 
+    try:
+        with sr.Microphone() as source:
+            print(" adjusting noise level... ")
+            reco.adjust_for_ambient_noise(source)
+            print(" Say The Passphrase... ")
+            audio = reco.listen(source)
+            text = reco.recognize_google(audio).lower()
+        
+            if text == passphrase:
+                print("passphrase matched! ✅")
+                print("Access granted! ✅")
+                #المفروض هسجل هما log 
+
+            else: 
+                print("Passphrase is incorrect!")
+                print("Access Denied!")
+                #المفروض هسجل هنا log 
+
+
+    except sr.UnknownValueError:
+        print("[ERROR] Could not understand audio.")
+        #المفروض اسحل هنا log ---> "FAILED - Unintelligible speech")
+        return False
+
+    except sr.RequestError:
+        print("[ERROR] Speech Recognition service unavailable.")
+        #المفروض هسجل هنا log----> "FAILED - Recognition service error")
+        return False
+
+    except Exception as e:
+        print(f"[ERROR] Microphone/Audio error: {e}")
+        #لبمفروض هسجل هنا log -----> f"FAILED - {e}")
+        return False
+
