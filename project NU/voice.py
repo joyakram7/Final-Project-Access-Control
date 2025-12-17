@@ -35,8 +35,11 @@ def voice_passphrase(first_name,student_id):
 
                 log_attempt(first_name, "voice", f" Fail ID: {student_id}") # تسجيل log 
 
-        else: print("System is locked" \
+        else: 
+            print("System is locked" \
         "No more attempts left")
+            log_attempt(first_name, "voice", f" Fail ID: {student_id} - System locked")
+           
 
     except sr.UnknownValueError:
         print("[ERROR] Could not understand audio.")
